@@ -2,9 +2,26 @@
   <main class="page">
     <h1>Button Demo (Base Theme)</h1>
     <p>
-      Class-based button examples aligned to
-      <code>?path=/docs/components-button-buttons--docs</code>.
+      Skill-driven page aligned to
+      <code>?path=/docs/components-button-buttons--docs</code> and
+      <code>projects/button-skill/SKILL.md</code>.
     </p>
+
+    <section class="demo-card mb-space-sm">
+      <h2>Skill Requirements Applied</h2>
+      <ul class="mb-0">
+        <li>
+          Uses base theme from registry package:
+          <code>@rds-vue-ui/rds-theme-base</code>
+        </li>
+        <li>
+          Relies on app entry import:
+          <code>import '@rds-vue-ui/rds-theme-base/dist/css/rds-theme-base.css'</code>
+        </li>
+        <li>Implements Storybook-documented class patterns (`btn`, size, variant, disabled, block)</li>
+        <li>Does not introduce a local replacement button component</li>
+      </ul>
+    </section>
 
     <section class="demo-card">
       <h2>Solid variants</h2>
