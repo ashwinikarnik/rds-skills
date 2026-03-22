@@ -18,7 +18,7 @@ Use this skill when implementing a play/video CTA with `@rds-vue-ui/button-play-
 ## Inputs
 - Framework: `Vue 3`
 - Package manager: `yarn` (or npm/pnpm equivalent)
-- Private registry: `https://npm.edpl.us`
+- Private registry (required): `https://npm.edpl.us`
 - Storybook docs URL:
   `https://rds-vue-ui.edpl.us/?path=/docs/components-button-buttonplayapollo--docs`
 - Target files (project-specific):
@@ -31,6 +31,12 @@ Use this skill when implementing a play/video CTA with `@rds-vue-ui/button-play-
 - `@rds-vue-ui/button-play-apollo`
 - `@rds-vue-ui/rds-theme-base`
 - `sass-embedded` (required if package styles include `lang="scss"`)
+
+## Registry Configuration (Required)
+1. Add/update project `.npmrc`:
+   - `@rds-vue-ui:registry=https://npm.edpl.us/`
+2. Validate package resolution:
+   - `npm view @rds-vue-ui/button-play-apollo version --registry=https://npm.edpl.us/`
 
 ## Component Contract (Source-Aligned)
 - Props:
@@ -48,7 +54,7 @@ Use this skill when implementing a play/video CTA with `@rds-vue-ui/button-play-
 ## Implementation Steps
 1. Configure scoped registry:
    - Add/update `.npmrc` with `@rds-vue-ui:registry=https://npm.edpl.us/`.
-2. Install packages:
+2. Install packages from private registry:
    - `yarn add @rds-vue-ui/rds-theme-base @rds-vue-ui/button-play-apollo`
    - `yarn add -D sass-embedded` (if build fails on SCSS preprocessing).
 3. Import base theme once in `<APP_ENTRY>`:
@@ -62,6 +68,8 @@ Use this skill when implementing a play/video CTA with `@rds-vue-ui/button-play-
 7. Build and resolve any dependency/style issues.
 
 ## Verification Checklist
+- [ ] `.npmrc` contains `@rds-vue-ui:registry=https://npm.edpl.us/`.
+- [ ] `@rds-vue-ui/button-play-apollo` resolves from private registry.
 - [ ] Theme CSS imported exactly once in app entry.
 - [ ] Enabled button emits `ctaClick`.
 - [ ] Disabled button does not emit interaction behavior.
@@ -71,7 +79,9 @@ Use this skill when implementing a play/video CTA with `@rds-vue-ui/button-play-
 
 ## Failure Handling
 - Registry/auth failure:
-  - Verify `.npmrc` scope and access to `https://npm.edpl.us`.
+  - Verify `.npmrc` scope is set to `@rds-vue-ui:registry=https://npm.edpl.us/`.
+  - Retry `npm view @rds-vue-ui/button-play-apollo version --registry=https://npm.edpl.us/`.
+  - If still blocked, confirm VPN/SSO/token requirements for private registry access.
 - SCSS preprocessor failure:
   - Install `sass-embedded` and rebuild.
 - Color mismatch:
