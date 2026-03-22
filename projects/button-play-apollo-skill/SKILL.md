@@ -1,3 +1,8 @@
+---
+name: button-play-apollo-skill
+description: Reusable workflow for implementing and validating @rds-vue-ui/button-play-apollo across projects, including registry setup, theme wiring, demo integration, and verification gates.
+---
+
 # Skill: ButtonPlayApollo (Reusable)
 
 ## When To Use

@@ -1,3 +1,8 @@
+---
+name: button-skill
+description: Reusable workflow for documenting and validating the RDS Button component in base theme, including API capture, behavior matrix, examples, and QA checks.
+---
+
 # Button Skill
 
 ## Intent
