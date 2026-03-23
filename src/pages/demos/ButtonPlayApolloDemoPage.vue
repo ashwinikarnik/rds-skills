@@ -3,7 +3,7 @@
     <h1>ButtonPlayApollo Demo</h1>
     <p>
       Component usage aligned to <code>@rds-vue-ui/button-play-apollo</code> and
-      <code>?path=/docs/components-button-buttonplayapollo--docs</code>.
+      <code>?path=/docs/components-button-buttonplayapollo--docs</code>. Install with <code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill -a codex -y</code>.
     </p>
 
     <section class="demo-card">

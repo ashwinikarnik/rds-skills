@@ -3,7 +3,8 @@
     <h1>FormCheckbox Demo (Base Theme)</h1>
     <p>
       Example page built from <code>projects/form-checkbox-skill/SKILL.md</code> using
-      <code>@rds-vue-ui/form-checkbox</code> from the private registry.
+      <code>@rds-vue-ui/form-checkbox</code> from the private registry. Install with
+      <code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill -a codex -y</code>.
     </p>
 
     <section class="demo-card mb-space-sm">

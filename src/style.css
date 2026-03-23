@@ -204,6 +204,58 @@ ul {
   color: var(--warm);
 }
 
+.command-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.command-meta .code-title,
+.command-meta .label {
+  margin: 0;
+}
+
+.copy-btn {
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.05);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+.copy-btn:hover {
+  background: rgba(89, 246, 184, 0.16);
+  border-color: rgba(89, 246, 184, 0.55);
+}
+
+.copy-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.copy-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.copy-icon-success {
+  color: var(--accent);
+}
+
 .code-panel pre,
 .install-block,
 .install-inline {
