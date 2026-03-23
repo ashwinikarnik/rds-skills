@@ -25,6 +25,12 @@
           >Open Demo</router-link
         >
       </article>
+
+      <article class="demo-tile">
+        <h2>FormCheckbox</h2>
+        <p>Checkbox examples with v-model, disabled, and indeterminate behavior.</p>
+        <router-link class="btn btn-primary btn-sm" to="/demos/form-checkbox">Open Demo</router-link>
+      </article>
     </section>
   </main>
 </template>
