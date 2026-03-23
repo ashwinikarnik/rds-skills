@@ -288,6 +288,13 @@
   dependencies:
     vue "^3.4.31"
 
+"@rds-vue-ui/form-checkbox@^0.2.0":
+  version "0.2.0"
+  resolved "https://npm.edpl.us/@rds-vue-ui%2fform-checkbox/-/form-checkbox-0.2.0.tgz#722511ed6f7d4e441c9970af41c54dbf8dc68f2c"
+  integrity sha512-suPuxaiHrdeYTVtsC3uRWMxj5qBIgg5/9gUpHOkMgIqvc+519CwZI0MlwB0PfApZj2lbBxkcon3W8eNIUmukZg==
+  dependencies:
+    vue "^3.4.31"
+
 "@rds-vue-ui/rds-theme-base@^0.7.1":
   version "0.7.1"
   resolved "https://npm.edpl.us/@rds-vue-ui%2frds-theme-base/-/rds-theme-base-0.7.1.tgz#ae1ed2dc486c973706d135c66b0f40f1cd536a1a"

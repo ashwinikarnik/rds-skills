@@ -4,6 +4,7 @@ import AllDemosPage from './pages/AllDemosPage.vue';
 import ButtonDemoPage from './pages/demos/ButtonDemoPage.vue';
 import ButtonPlayApolloDemoPage from './pages/demos/ButtonPlayApolloDemoPage.vue';
 import ButtonPlayApolloSkillTestPage from './pages/demos/ButtonPlayApolloSkillTestPage.vue';
+import FormCheckboxDemoPage from './pages/demos/FormCheckboxDemoPage.vue';
 
 const routes = [
   { path: '/', name: 'home', component: HomePage },
@@ -18,6 +19,11 @@ const routes = [
     path: '/demos/button-play-apollo-skill-test',
     name: 'button-play-apollo-skill-test',
     component: ButtonPlayApolloSkillTestPage
+  },
+  {
+    path: '/demos/form-checkbox',
+    name: 'form-checkbox-demo',
+    component: FormCheckboxDemoPage
   }
 ];
 
