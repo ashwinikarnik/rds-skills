@@ -1,35 +1,56 @@
 <template>
-  <main class="page">
-    <h1>All Live Demos</h1>
-    <p>Select a component demo page.</p>
+  <main class="market-page">
+    <section class="directory-header">
+      <p class="eyebrow">/demos</p>
+      <h1>Live Demo Directory</h1>
+      <p>
+        Open each route to test component behavior directly and validate skill output against the
+        documented workflow.
+      </p>
+    </section>
 
-    <section class="demo-grid">
-      <article class="demo-tile">
-        <h2>Button (Base Theme)</h2>
-        <p>Variants, sizes, disabled, and block examples.</p>
-        <router-link class="btn btn-primary btn-sm" to="/demos/button">Open Demo</router-link>
-      </article>
-
-      <article class="demo-tile">
-        <h2>ButtonPlayApollo</h2>
-        <p>Play CTA button with event emission and disabled state.</p>
-        <router-link class="btn btn-primary btn-sm" to="/demos/button-play-apollo"
+    <section class="directory-list">
+      <article class="directory-item">
+        <div>
+          <p class="skill-kind">base component skill</p>
+          <h2>button-skill</h2>
+          <p>Variants, sizes, disabled, and block classes in base theme.</p>
+          <pre class="install-inline"><code>yarn add @rds-vue-ui/rds-theme-base</code></pre>
+        </div>
+        <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/button"
           >Open Demo</router-link
         >
       </article>
 
-      <article class="demo-tile">
-        <h2>ButtonPlayApollo Skill Test</h2>
-        <p>Validation page built directly from the reusable skill instructions.</p>
-        <router-link class="btn btn-primary btn-sm" to="/demos/button-play-apollo-skill-test"
-          >Open Demo</router-link
-        >
+      <article class="directory-item">
+        <div>
+          <p class="skill-kind">component + event skill</p>
+          <h2>button-play-apollo-skill</h2>
+          <p>Play button package integration with click event and disabled-state validation.</p>
+          <pre class="install-inline"><code>yarn add @rds-vue-ui/button-play-apollo @rds-vue-ui/rds-theme-base</code></pre>
+        </div>
+        <div class="multi-links">
+          <router-link
+            class="hero-btn hero-btn-primary btn-compact"
+            to="/demos/button-play-apollo-skill-test"
+            >Skill Test</router-link
+          >
+          <router-link class="hero-btn hero-btn-ghost btn-compact" to="/demos/button-play-apollo"
+            >Component Demo</router-link
+          >
+        </div>
       </article>
 
-      <article class="demo-tile">
-        <h2>FormCheckbox</h2>
-        <p>Checkbox examples with v-model, disabled, and indeterminate behavior.</p>
-        <router-link class="btn btn-primary btn-sm" to="/demos/form-checkbox">Open Demo</router-link>
+      <article class="directory-item">
+        <div>
+          <p class="skill-kind">form control skill</p>
+          <h2>form-checkbox-skill</h2>
+          <p>Checkbox usage with parent-child grouping and state verification.</p>
+          <pre class="install-inline"><code>yarn add @rds-vue-ui/form-checkbox @rds-vue-ui/rds-theme-base</code></pre>
+        </div>
+        <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/form-checkbox"
+          >Open Demo</router-link
+        >
       </article>
     </section>
   </main>
