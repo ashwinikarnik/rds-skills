@@ -4,7 +4,7 @@
     <p>
       Skill-driven page aligned to
       <code>?path=/docs/components-button-buttons--docs</code> and
-      <code>projects/button-skill/SKILL.md</code>. Install with <code>npx skills add ashwinikarnik/rds-skills --skill button-skill -a codex -y</code>.
+      <code>projects/button-skill/SKILL.md</code>. Install with <code>npx skills add ashwinikarnik/rds-skills --skill button-skill</code>.
     </p>
 
     <section class="demo-card mb-space-sm">

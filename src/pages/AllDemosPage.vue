@@ -15,7 +15,7 @@
           <p class="skill-kind">base component skill</p>
           <h2>button-skill</h2>
           <p>Variants, sizes, disabled, and block classes in base theme.</p>
-          <pre class="install-inline"><code>npx skills add ashwinikarnik/rds-skills --skill button-skill -a codex -y</code></pre>
+          <pre class="install-inline"><code>npx skills add ashwinikarnik/rds-skills --skill button-skill</code></pre>
         </div>
         <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/button"
           >Open Live Demo</router-link
@@ -27,7 +27,7 @@
           <p class="skill-kind">component + event skill</p>
           <h2>button-play-apollo-skill</h2>
           <p>Play button package integration with click event and disabled-state validation.</p>
-          <pre class="install-inline"><code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill -a codex -y</code></pre>
+          <pre class="install-inline"><code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill</code></pre>
         </div>
         <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/button-play-apollo"
           >Open Live Demo</router-link
@@ -39,7 +39,7 @@
           <p class="skill-kind">form control skill</p>
           <h2>form-checkbox-skill</h2>
           <p>Checkbox usage with parent-child grouping and state verification.</p>
-          <pre class="install-inline"><code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill -a codex -y</code></pre>
+          <pre class="install-inline"><code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill</code></pre>
         </div>
         <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/form-checkbox"
           >Open Live Demo</router-link

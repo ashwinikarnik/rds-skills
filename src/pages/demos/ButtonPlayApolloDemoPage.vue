@@ -3,7 +3,7 @@
     <h1>ButtonPlayApollo Demo</h1>
     <p>
       Component usage aligned to <code>@rds-vue-ui/button-play-apollo</code> and
-      <code>?path=/docs/components-button-buttonplayapollo--docs</code>. Install with <code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill -a codex -y</code>.
+      <code>?path=/docs/components-button-buttonplayapollo--docs</code>. Install with <code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill</code>.
     </p>
 
     <section class="demo-card">
@@ -31,14 +31,14 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ButtonPlayApollo } from '@rds-vue-ui/button-play-apollo';
 
-const onCtaClick = () => {
+const onCtaClick = (): void => {
   console.log('ButtonPlayApollo ctaClick fired');
 };
 
-const onDisabledClick = () => {
+const onDisabledClick = (): void => {
   console.log('Disabled button click should not fire');
 };
 </script>

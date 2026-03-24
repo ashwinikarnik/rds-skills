@@ -42,7 +42,7 @@
 printf "@rds-vue-ui:registry=https://npm.edpl.us/\n" > .npmrc
 
 # 2) install all project skills for Codex
-npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -y
+npx skills add ashwinikarnik/rds-skills --skill '*'
 
 # 3) run live demos
 yarn dev</code></pre>
@@ -87,7 +87,7 @@ yarn dev</code></pre>
               </svg>
             </button>
           </div>
-          <pre class="install-block"><code>npx skills add ashwinikarnik/rds-skills --skill button-skill -a codex -y</code></pre>
+          <pre class="install-block"><code>npx skills add ashwinikarnik/rds-skills --skill button-skill</code></pre>
           <div class="card-links">
             <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/button"
               >Open Live Demo</router-link
@@ -127,7 +127,7 @@ yarn dev</code></pre>
               </svg>
             </button>
           </div>
-          <pre class="install-block"><code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill -a codex -y</code></pre>
+          <pre class="install-block"><code>npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill</code></pre>
           <div class="card-links">
             <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/button-play-apollo"
               >Open Live Demo</router-link
@@ -167,7 +167,7 @@ yarn dev</code></pre>
               </svg>
             </button>
           </div>
-          <pre class="install-block"><code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill -a codex -y</code></pre>
+          <pre class="install-block"><code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill</code></pre>
           <div class="card-links">
             <router-link class="hero-btn hero-btn-primary btn-compact" to="/demos/form-checkbox"
               >Open Live Demo</router-link
@@ -179,19 +179,20 @@ yarn dev</code></pre>
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 
 const copiedKey = ref('');
 const commands = {
-  all: "npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -y",
-  button: 'npx skills add ashwinikarnik/rds-skills --skill button-skill -a codex -y',
+  all: "npx skills add ashwinikarnik/rds-skills --skill '*'",
+  button: 'npx skills add ashwinikarnik/rds-skills --skill button-skill',
   buttonPlayApollo:
-    'npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill -a codex -y',
-  formCheckbox: 'npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill -a codex -y'
+    'npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill',
+  formCheckbox: 'npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill'
 };
+type CommandKey = keyof typeof commands;
 
-const copyCommand = async (key) => {
+const copyCommand = async (key: CommandKey): Promise<void> => {
   if (!navigator?.clipboard || !commands[key]) {
     return;
   }

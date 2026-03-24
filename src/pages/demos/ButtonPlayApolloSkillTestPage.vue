@@ -51,7 +51,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, ref } from 'vue';
 import { ButtonPlayApollo } from '@rds-vue-ui/button-play-apollo';
 import { useRoute } from 'vue-router';
@@ -60,11 +60,11 @@ const clickCount = ref(0);
 const disabledClickAttempts = ref(0);
 const route = useRoute();
 
-const onCtaClick = () => {
+const onCtaClick = (): void => {
   clickCount.value += 1;
 };
 
-const onDisabledClick = () => {
+const onDisabledClick = (): void => {
   disabledClickAttempts.value += 1;
 };
 

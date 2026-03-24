@@ -22,8 +22,8 @@ Use this skill when implementing a play/video CTA with `@rds-vue-ui/button-play-
 - Storybook docs URL:
   `https://rds-vue-ui.edpl.us/?path=/docs/components-button-buttonplayapollo--docs`
 - Target files (project-specific):
-  - `<APP_ENTRY>` (example: `src/main.js`)
-  - `<ROUTER_FILE>` (example: `src/router.js`)
+  - `<APP_ENTRY>` (example: `src/main.ts`)
+  - `<ROUTER_FILE>` (example: `src/router.ts`)
   - `<DEMO_PAGE_FILE>` (example: `src/pages/demos/ButtonPlayApolloDemoPage.vue`)
   - `<DEMOS_INDEX_FILE>` (example: `src/pages/AllDemosPage.vue`)
 

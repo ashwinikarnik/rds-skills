@@ -19,28 +19,28 @@ This repo now exposes reusable skills under `skills/` so you can install them wi
 npx skills add ashwinikarnik/rds-skills --list
 ```
 
-### Install one skill (Codex, project scope)
+### Install one skill
 
 ```bash
-npx skills add ashwinikarnik/rds-skills --skill button-skill -a codex -y
-npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill -a codex -y
-npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill -a codex -y
+npx skills add ashwinikarnik/rds-skills --skill button-skill
+npx skills add ashwinikarnik/rds-skills --skill button-play-apollo-skill
+npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill
 ```
 
-### Install all skills at once (Codex)
+### Install all skills at once
 
 ```bash
-npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -y
+npx skills add ashwinikarnik/rds-skills --skill '*'
 ```
 
 ### Install for other coding agents
 
 ```bash
 # Claude Code
-npx skills add ashwinikarnik/rds-skills --skill '*' -a claude-code -y
+npx skills add ashwinikarnik/rds-skills --skill '*' -a claude-code
 
 # Multiple agents in one command
-npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -a claude-code -y
+npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -a claude-code
 ```
 
 ### Command flags explained
@@ -53,13 +53,13 @@ npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -a claude-code -y
 Example with all common flags:
 
 ```bash
-npx skills add ashwinikarnik/rds-skills --skill '*' -a codex -y
+npx skills add ashwinikarnik/rds-skills --skill '*'
 ```
 
 ### Test locally before publishing
 
 ```bash
 npx skills add . --list
-npx skills add . --skill button-skill -a codex -y
+npx skills add . --skill button-skill
 npx skills list -a codex
 ```

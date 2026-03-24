@@ -4,7 +4,7 @@
     <p>
       Example page built from <code>projects/form-checkbox-skill/SKILL.md</code> using
       <code>@rds-vue-ui/form-checkbox</code> from the private registry. Install with
-      <code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill -a codex -y</code>.
+      <code>npx skills add ashwinikarnik/rds-skills --skill form-checkbox-skill</code>.
     </p>
 
     <section class="demo-card mb-space-sm">
@@ -87,7 +87,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, reactive, ref } from 'vue';
 import { FormCheckbox } from '@rds-vue-ui/form-checkbox';
 
@@ -111,21 +111,21 @@ const isIndeterminate = computed(
   () => selectedChildrenCount.value > 0 && selectedChildrenCount.value < 3
 );
 
-const onBasicModelUpdate = (value) => {
+const onBasicModelUpdate = (value: boolean): void => {
   basicChecked.value = value;
 };
 
-const onParentToggle = (checked) => {
+const onParentToggle = (checked: boolean): void => {
   children.child1 = checked;
   children.child2 = checked;
   children.child3 = checked;
 };
 
-const onChanged = () => {
+const onChanged = (): void => {
   changedEvents.value += 1;
 };
 
-const onDisabledChanged = () => {
+const onDisabledChanged = (): void => {
   disabledChangeAttempts.value += 1;
 };
 </script>
